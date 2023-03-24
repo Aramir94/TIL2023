@@ -1,9 +1,11 @@
 # Mystery Developer on the Path to Becoming a Dragon Warrior 🐉
 
-![Junior Developer](https://media.giphy.com/media/xTk2YPyZ08C7qL41YA/giphy.gif)
+![Junior Developer](https://media.giphy.com/media/xTk2YPyZ08C7qL41YA/giphy.gif)<br/>
 
-Greetings, fellow adventurer! I am on a quest to become a Dragon Warrior and I'm documenting my journey here.
 
+Greetings, fellow adventurer! <br/>
+I am on a quest to become a Dragon Warrior and I'm documenting my journey here.<br/>
+<br/>
 
                                        ___====-_  _-====___
                                  _--~~~#####// '  ` \\#####~~~--_
@@ -21,17 +23,14 @@ Greetings, fellow adventurer! I am on a quest to become a Dragon Warrior and I'm
                                          (  |  |()|  |  )\        /|/
                                         __\ |__|()|__| /__\______/|/
                                        (vvv(vvvv)(vvvv)vvv)______|/
-
+<br/>
 ## About Me
-I am a passionate developer on a quest to become a Dragon Warrior. 
-
-As a skilled adventurer,
-
+I am a passionate developer on a quest to become a Dragon Warrior. <br/>
+As a skilled adventurer, <br/>
 I constantly explore new technologies and hone my skills to prepare for the challenges ahead
 
 ## Skills
-As a Dragon Warrior in training,
-
+As a Dragon Warrior in training, <br/>
 I have a variety of skills to help me overcome any obstacle:
 
 
