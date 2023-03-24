@@ -4,7 +4,6 @@
 
 Hi there! I'm a junior developer on a mission to level up my skills and transform into a **Dragon Warrior**!
 
-------------------------------------------------
        ,===:'.,            `-._
             `:.`---.__         `-._
               `:.     `--.         `.
