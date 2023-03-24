@@ -1,4 +1,4 @@
-# Mystery Developer on the Path to Becoming a Dragon Warrior 🐉
+# On the Path to Becoming a Dragon Warrior 🐉
 
 ![Junior Developer](https://media.giphy.com/media/xTk2YPyZ08C7qL41YA/giphy.gif)<br/>
 
