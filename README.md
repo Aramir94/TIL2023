@@ -2,7 +2,7 @@
 
 ![Junior Developer](https://media.giphy.com/media/xTk2YPyZ08C7qL41YA/giphy.gif)
 
-Hi there! I'm a Mystery developer on a mission to level up my skills and transform into a **Dragon Warrior**!
+Greetings, fellow adventurer! I am on a quest to become a Dragon Warrior and I'm documenting my journey here.
 
 
                                        ___====-_  _-====___
@@ -23,13 +23,13 @@ Hi there! I'm a Mystery developer on a mission to level up my skills and transfo
                                        (vvv(vvvv)(vvvv)vvv)______|/
 
 ## About Me
-
-I'm a passionate developer constantly exploring new technologies and honing my skills.
-
-I have experience with a variety of programming languages and frameworks, 
-and I'm eager to learn more to become the best Dragon Warrior I can be.
+I am a passionate developer on a quest to become a Dragon Warrior. 
+As a skilled adventurer,
+I constantly explore new technologies and hone my skills to prepare for the challenges ahead
 
 ## Skills
+As a Dragon Warrior in training, I have a variety of skills to help me overcome any obstacle:
+
 
 - 🔰 Programming languages: JavaScript, Python, C++, GO, RUST, JULIA, JAVA
 - 🔰 Web development: HTML, CSS, Bootstrap
@@ -38,15 +38,22 @@ and I'm eager to learn more to become the best Dragon Warrior I can be.
 - 🔰 Database: SQL, NoSQL, MongoDB, GraphDB
 
 ## Current Projects
+Here are some of the quests I'm currently on:
 
-Here are some of the projects I'm currently working on:
-- TOBE CONTINUE >> This is the Way
+TO BE CONTINUED... This is just the beginning of my journey!
 
 ## Get in Touch
+If you're interested in collaborating on a quest, sharing your own adventure, 
+or simply following my journey to becoming a Dragon Warrior, 
+feel free to reach out to me at lightyear94122@gmail.com.
 
-Feel free to contact me at lightyear94122@gmail.com if you'd like to chat, collaborate on projects, or simply follow my journey to becoming a Dragon Warrior.
 
 ---
-
 🐉 *Let the journey to becoming a Dragon Warrior begin!* 🐉
 
+
+
+**In dev's armor, mighty and strong,
+The Dragon Warrior battles on.
+With skills honed, and code in hand,
+They vanquish dragons across the land.**
