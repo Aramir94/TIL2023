@@ -5,20 +5,6 @@
 Hi there! I'm a Mystery developer on a mission to level up my skills and transform into a **Dragon Warrior**!
 
 
-
-                 \||/
-                 |  @___oo
-       /\  /\   / (__,,,,|      The Green Dragon
-      ) /^\) ^\/ _)
-      )   /^\/   _)            "Out of order there is chaos,
-      )   _ /  / _)             and out of chaos there is order"
-  /\  )/\/ ||  | )_)
- <  >      |(,,) )__)
-  ||      /    \)___)\         
-  | \____(      )___) )___      
-   \______(_______;;; __;;;  -dcau
-
-
                                        ___====-_  _-====___
                                  _--~~~#####// '  ` \\#####~~~--_
                                -~##########// (    ) \\##########~-_
