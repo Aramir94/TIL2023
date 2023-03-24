@@ -62,7 +62,7 @@ feel free to reach out to me at lightyear94122@gmail.com.
 
 
 
-**In dev's armor, mighty and strong,  \n 
-The Dragon Warrior battles on.  \n
-With skills honed, and code in hand,  \n
+**In dev's armor, mighty and strong,<br/> 
+The Dragon Warrior battles on.<br/>
+With skills honed, and code in hand,<br/>
 They vanquish dragons across the land.** 
