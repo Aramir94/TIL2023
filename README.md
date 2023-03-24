@@ -1,24 +1,23 @@
-# Junior Developer on the Path to Becoming a Dragon Warrior 🐉
+# Mystery Developer on the Path to Becoming a Dragon Warrior 🐉
 
-![Junior Developer](https://media.giphy.com/media/3o7aDedrEa6OMtumic/giphy.gif)
+![Junior Developer](https://media.giphy.com/media/xTk2YPyZ08C7qL41YA/giphy.gif)
 
-Hi there! I'm a junior developer on a mission to level up my skills and transform into a **Dragon Warrior**!
+Hi there! I'm a Mystery developer on a mission to level up my skills and transform into a **Dragon Warrior**!
 
-       ,===:'.,            `-._
-            `:.`---.__         `-._
-              `:.     `--.         `.
-                \.        `.         `.
-        (,,(,    \.         `.   ____,-`.,
-     (,'     `/   \.   ,--.___`.'
- ,  ,'  ,--.  `,   \.;'         `
-  `{D, {    \  :    \;
-    V,,'    /  /    //
-    j;;    /  ,' ,-//.    ,---.      ,
-    \;'   /  ,' /  _  \  /  _  \   ,'/
-          \   `'  / \  `'  / \  `.' /
-           `.___,'   `.__,'   `.__,'  
 
-------------------------------------------------
+
+            ___====-_  _-====___
+      _--^^^#####//      \\#####^^^--_
+   _-^##########// (    ) \\##########^-_
+  -############//  |\^^/|  \\############-
+_/############//   (@::@)   \\############\_
+/#############(( \// ))#############
+-###############\ (oo) //###############-
+-#################\ / UUU \ //#################-
+-###################\/ (v) /###################-
+#/|##########/######( / \ )######/##########|#
+|/ |#/#/#// #/##\ |(_)| /##/#/ /#/#|
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
 
 
 ## About Me
