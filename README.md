@@ -24,11 +24,15 @@ Greetings, fellow adventurer! I am on a quest to become a Dragon Warrior and I'm
 
 ## About Me
 I am a passionate developer on a quest to become a Dragon Warrior. 
+
 As a skilled adventurer,
+
 I constantly explore new technologies and hone my skills to prepare for the challenges ahead
 
 ## Skills
-As a Dragon Warrior in training, I have a variety of skills to help me overcome any obstacle:
+As a Dragon Warrior in training,
+
+I have a variety of skills to help me overcome any obstacle:
 
 
 - 🔰 Programming languages: JavaScript, Python, C++, GO, RUST, JULIA, JAVA
@@ -40,11 +44,16 @@ As a Dragon Warrior in training, I have a variety of skills to help me overcome 
 ## Current Projects
 Here are some of the quests I'm currently on:
 
-TO BE CONTINUED... This is just the beginning of my journey!
+TO BE CONTINUED... 
+
+This is just the beginning of my journey!
 
 ## Get in Touch
+
 If you're interested in collaborating on a quest, sharing your own adventure, 
+
 or simply following my journey to becoming a Dragon Warrior, 
+
 feel free to reach out to me at lightyear94122@gmail.com.
 
 
@@ -53,7 +62,7 @@ feel free to reach out to me at lightyear94122@gmail.com.
 
 
 
-**In dev's armor, mighty and strong,
-The Dragon Warrior battles on.
-With skills honed, and code in hand,
-They vanquish dragons across the land.**
+**In dev's armor, mighty and strong,  \n 
+The Dragon Warrior battles on.  \n
+With skills honed, and code in hand,  \n
+They vanquish dragons across the land.** 
