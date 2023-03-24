@@ -24,7 +24,10 @@ I am on a quest to become a Dragon Warrior and I'm documenting my journey here.<
                                         __\ |__|()|__| /__\______/|/
                                        (vvv(vvvv)(vvvv)vvv)______|/
 <br/>
+
 ## About Me
+
+
 I am a passionate developer on a quest to become a Dragon Warrior. <br/>
 As a skilled adventurer, <br/>
 I constantly explore new technologies and hone my skills to prepare for the challenges ahead
