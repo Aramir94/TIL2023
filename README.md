@@ -19,10 +19,29 @@ _/############//   (@::@)   \\############\_
 |/ |#/#/#// #/##\ |(_)| /##/#/ /#/#|
 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
 
+                                       ___====-_  _-====___
+                                 _--~~~#####// '  ` \\#####~~~--_
+                               -~##########// (    ) \\##########~-_
+                             -############//  |\^^/|  \\############-
+                           _~############//   (O||O)   \\############~_
+                          ~#############((     \\//     ))#############~
+                         -###############\\    (oo)    //###############-
+                        -#################\\  / `' \  //#################-
+                       -###################\\/  ()  \//###################-
+                      _#/|##########/\######(  (())  )######/\##########|\#_
+                      |/ |#/\#/\#/\/  \#/\##|  \()/  |##/\#/  \/\#/\#/\#| \|
+                      `  |/  V  V  `   V  )||  |()|  ||(  V   '  V /\  \|  '
+                         `   `  `      `  / |  |()|  | \  '      '<||>  '
+                                         (  |  |()|  |  )\        /|/
+                                        __\ |__|()|__| /__\______/|/
+                                       (vvv(vvvv)(vvvv)vvv)______|/
 
 ## About Me
 
-I'm a passionate developer constantly exploring new technologies and honing my skills. I have experience with a variety of programming languages and frameworks, and I'm eager to learn more to become the best Dragon Warrior I can be.
+I'm a passionate developer constantly exploring new technologies and honing my skills.
+
+I have experience with a variety of programming languages and frameworks, 
+and I'm eager to learn more to become the best Dragon Warrior I can be.
 
 ## Skills
 
