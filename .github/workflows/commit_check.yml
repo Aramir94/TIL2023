@@ -53,3 +53,4 @@ jobs:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
 
           username: github-actions
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
