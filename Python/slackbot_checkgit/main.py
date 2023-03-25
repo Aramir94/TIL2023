@@ -25,9 +25,8 @@ cursor.execute("CREATE TABLE IF NOT EXISTS fines (user TEXT, date TEXT, fine INT
 
 # Create the commits table if it doesn't exist
 cursor_commits.execute("CREATE TABLE IF NOT EXISTS commits (user TEXT, date TEXT, count INTEGER)")
-
 # Define the message text and total fine amount
-message = ""
+message = f"\n{today.strftime('%Y-%m-%d')}일 대탈출 멤버들 깃 확인 보고 \n\n\n"
 fine_total = 0
 
 # Iterate over the users and check their commit counts
