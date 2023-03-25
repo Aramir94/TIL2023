@@ -2,10 +2,9 @@ import os
 import datetime
 import requests
 import sqlite3
-import random
 
 # Define the Slack webhook URL and users to check
-webhook_url = "https://hooks.slack.com/services/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"
+webhook_url = "https://hooks.slack.com/services/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"
 users = ["Aramir94", "raunee", "LearningnRunning"]
 
 # Define the amount of fine for not committing code (in dollars)
@@ -14,15 +13,15 @@ fine_amount = 3000
 # Get the current date
 today = datetime.date.today()
 
-# Initialize the SQLite connections
-conn_fines = sqlite3.connect("fines.db")
-cursor_fines = conn_fines.cursor()
+# Initialize the SQLite connection
+conn = sqlite3.connect("fines.db")
+cursor = conn.cursor()
 
 conn_commits = sqlite3.connect("commits.db")
 cursor_commits = conn_commits.cursor()
 
 # Create the fines table if it doesn't exist
-cursor_fines.execute("CREATE TABLE IF NOT EXISTS fines (user TEXT, date TEXT, fine INTEGER)")
+cursor.execute("CREATE TABLE IF NOT EXISTS fines (user TEXT, date TEXT, fine INTEGER)")
 
 # Create the commits table if it doesn't exist
 cursor_commits.execute("CREATE TABLE IF NOT EXISTS commits (user TEXT, date TEXT, count INTEGER)")
@@ -49,14 +48,14 @@ for user in users:
         for event in events:
             if event["type"] == "PushEvent" and event["created_at"].startswith(str(today)):
                 commit_count += len(event["payload"]["commits"])
-
+        
         # Add the user's commit count to the message
         message += f"{user}: {commit_count} commits today\n\n"
 
         # If the user hasn't committed code today, add a fine to the database and the total fine amount
         if commit_count == 0:
-            cursor_fines.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), fine_amount))
-            conn_fines.commit()
+            cursor.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), fine_amount))
+            conn.commit()
 
             saying_url = "https://api.quotable.io/random"
             saying_response = requests.get(saying_url)
@@ -65,18 +64,18 @@ for user in users:
                 author = saying_response.json()["author"] 
                 text =  f"{saying}\n- {author}\n\n"
             else:
-                text = f"Don't forget to commit your code tomorrow!\n\n"
-
-            message += f":rotating_light: {user} hasn't committed any code today!!\n {text} :rotating_light:"
-        else:
-            cursor_fines.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), 0)) # commit 했을떄 0원 넣어주기
-            conn_fines.commit()
+                text = f"Let's work hard and find joy in our coding tomorrow!!\n\n"
             
+            message += f"{user}: {fine_amount}원 벌금 확정입니다!! \n {text}"
+            # Add a message attachment with the user's name and a message encouraging hard work and joy
+        else:
+             cursor.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), 0))
+
         # Store the user's commit count in the database
         cursor_commits.execute("INSERT INTO commits (user, date, count) VALUES (?, ?, ?)", (user, str(today), commit_count))
         conn_commits.commit()
     else:
-        message += f"Error checking {user}'s activity\n"
+        message += f"Error checking {user}'s activity\n\n"
 
 # Add the total fine amount to the message
 
