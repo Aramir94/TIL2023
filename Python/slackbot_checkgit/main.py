@@ -4,7 +4,7 @@ import requests
 import sqlite3
 
 # Define the Slack webhook URL and users to check
-webhook_url = "https://hooks.slack.com/services/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"
+webhook_url =  os.environ['SLACK_WEBHOOK_URL']
 users = ["Aramir94", "raunee", "LearningnRunning"]
 
 # Define the amount of fine for not committing code (in dollars)
@@ -84,5 +84,5 @@ if response.status_code == 200:
     print("Message sent to Slack")
 else:
     print(f"Error sending message to Slack ({response.status_code}): {response.text}")
-    webhook_urk = 'https://hooks.slack.com/services/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'
+    webhook_urk = os.environ['SLACK_WEBHOOK_URL_1']
     response = requests.post(webhook_url, json={"text": "webhook url something wrong"})
