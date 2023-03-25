@@ -23,7 +23,7 @@ jobs:
       - id: python
         name: Python Setup & Packages Installation
         env: 
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
