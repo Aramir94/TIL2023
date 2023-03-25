@@ -26,8 +26,13 @@ jobs:
       run: |
         cd Python/slackbot_checkgit
         python main.py
-        git config --global user.email "<YOUR EMAIL>"
-        git config --global user.name "<YOUR NAME>"
+        git config --global user.email "actions@github.com"
+        git config --local user.name actions-user
         git add Python/commit.db Python/fine.db
         git commit -m "Add commit and fine data"
-        git push
+        git push origin main
+        
+      env:
+        REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+
+        username: github-actions
