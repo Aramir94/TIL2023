@@ -4,7 +4,7 @@ import requests
 import sqlite3
 
 # Define the Slack webhook URL and users to check
-webhook_url = "https://hooks.slack.com/services/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"
+webhook_url = "https://hooks.slack.com/services/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"
 users = ["Aramir94", "raunee", "LearningnRunning"]
 
 # Define the amount of fine for not committing code (in dollars)
@@ -45,12 +45,24 @@ for user in users:
         
         # Add the user's commit count to the message
         message += f"{user}: {commit_count} commits today\n"
-        
+
         # If the user hasn't committed code today, add a fine to the database and the total fine amount
         if commit_count == 0:
             cursor.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), fine_amount))
             conn.commit()
-            message += f"{user}: {fine_amount}원 벌금 확정입니다!! \n"
+
+            saying_url = "https://api.quotable.io/random"
+            saying_response = requests.get(saying_url)
+            if saying_response.status_code == 200:
+                saying = saying_response.json()["content"]
+                author = saying_response.json()["author"] 
+                text =  f"{saying}\n- {author}\n\n"
+            else:
+                text = f"Let's work hard and find joy in our coding tomorrow!!\n\n"
+            
+            message += f"{user}: {fine_amount}원 벌금 확정입니다!! \n {text}"
+            # Add a message attachment with the user's name and a message encouraging hard work and joy
+
     else:
         message += f"Error checking {user}'s activity\n"
 
