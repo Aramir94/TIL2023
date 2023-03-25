@@ -1,0 +1,33 @@
+name: SlackBot CheckGit
+
+on:
+  schedule:
+    - cron: "0 14 * * *" # Runs at 10:00 PM (KST) every day
+
+jobs:
+  check_git:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r Python/slackbot_checkgit/requirements.txt
+
+    - name: Run script
+      run: |
+        cd Python/slackbot_checkgit
+        python main.py
+        git config --global user.email "<YOUR EMAIL>"
+        git config --global user.name "<YOUR NAME>"
+        git add Python/commit.db Python/fine.db
+        git commit -m "Add commit and fine data"
+        git push
