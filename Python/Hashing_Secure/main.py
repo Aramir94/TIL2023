@@ -1,4 +1,4 @@
-# incrypted way 
+# incrypted Way 
 """
 encode and decode them -> receive message and decode message to see 
 """
