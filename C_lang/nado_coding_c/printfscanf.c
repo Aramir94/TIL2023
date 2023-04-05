@@ -20,9 +20,22 @@ int main(void)
     double d = 4.526;
     printf("%f\n", d);
     printf("%.2f\n", d);
-    return 0;
-
 
     // 상수 : 변하지 않는 수 
+    const int YEAR = 2000;
 
+    // 연산
+    int add = 3 + 8;
+    printf("3 + 8 = %d\n", add);
+    printf("%d + %d = %d\n", 3, 5, 3+5);
+
+
+    // scanf 
+    // 키보드 입력을 받아서 저장 
+    int a;
+    printf("값을 입력하세요 : ");
+    scanf("%d", &a);
+    printf("입력값은 %d 입니다\n", a);
+
+    return 0;
 }
