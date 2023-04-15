@@ -5,7 +5,7 @@ import sqlite3
 
 # Define the Slack webhook URL and users to check
 webhook_url =  os.environ['SLACK_WEBHOOK_URL']
-users = ["Aramir94", "raunee", "LearningnRunning"]
+users = ["Aramir94", "raunee", "LearningnRunning", "jjy0328"]
 
 print(webhook_url)
 # Define the amount of fine for not committing code (in dollars)
@@ -53,7 +53,7 @@ for user in users:
         message += f"{user}: {commit_count} commits today\n\n"
 
         # If the user hasn't committed code today, add a fine to the database and the total fine amount
-        if commit_count == 0:
+        if commit_count <= 2:
             cursor.execute("INSERT INTO fines (user, date, fine) VALUES (?, ?, ?)", (user, str(today), fine_amount))
             conn.commit()
 
