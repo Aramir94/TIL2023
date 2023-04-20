@@ -6,7 +6,7 @@ import sqlite3
 # Define the Slack webhook URL and users to check
 webhook_url = os.environ["SLACK_WEBHOOK_URL"]
 
-message = f"깃 커밋 체크 한시간 전 준비 바랍니다 \n\n\n"
+message = f"@everyone \n 깃 커밋 체크 한시간 전 준비 바랍니다 \n\n\n"
 # Add the total fine amount to the message
 
 # Send the message to the Slack webhook URL
