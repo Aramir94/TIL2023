@@ -1,3 +1,4 @@
+- 작업일 : 23.04.23 
 # **Quadcopter AI**
 
 Controlling a 2D Quadcopter with Rigidbody Physics using Control Theory and Reinforcement Learning
