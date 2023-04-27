@@ -15,4 +15,5 @@ function checkStringOddOrEven(str) {
 // 기능 노출 안 함
 console.log("숫자 홀짝 여부 판단", checkOddOrEven(2));
 console.log("문자 길이 홀짝 여부 판단", checkStringOddOrEven("hello"));
-module.export{checkStringOddOrEven};
+
+module.exports = { checkStringOddOrEven };
