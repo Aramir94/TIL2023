@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자바 스크립트 신규 함수 문법 사용하기</title>
+  </head>
+  <body>
+    <h1>자바스크립트 신규 함수 문법 사용하기</h1>
+    <script>
+      //전통적인 자바스크립트 함수 사용법 실습
+      function fnPlus(a, b) {
+        let c = a + b;
+        return c;
+      }
+
+      // 정의된 기능를 사용
+      var result = fnPlus(10, 20);
+      console.log("첫번째 함수 실행 결과", result);
+
+      //ECMA2015년 이후에 새롭게 정의된 함수 정의 및 활용 방식
+
+      // 익명함수를 정의하고 변수에 할당
+      const fnMinus = function (a, b) {
+        let c = a - b;
+        return c;
+      };
+      console.log("두번째 함수 실행 결과", fnMinus(10, 20));
+
+      var plus2 = (a, b) => {
+        return a + b;
+      };
+      console.log("화살표 함수 실행 결과", plus2(10, 20));
+
+      var plus3 = (a, b) => a + b;
+      console.log("화살표 함수 실행 결과", plus3(10, 20));
+    </script>
+  </body>
+</html>
