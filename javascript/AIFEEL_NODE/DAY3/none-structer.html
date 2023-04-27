@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열과 객체의 할당 실습하기</title>
+  </head>
+  <body>
+    <h1>배열과 객체의 비구조 할당과 실습</h1>
+
+    <script>
+      // Array 만들기
+      const books = [
+        "React",
+        "Vue",
+        "Angular",
+        "Svelt",
+        "Jquery",
+        "Javascript",
+      ];
+
+      // 배열안 첫번째 값 추출 두번째 값 추출 하는 전통적 방법
+      // 배열 안의 특정값 추출 하려면 배열에 [인덱스 순번]
+      var book1 = books[0];
+      var book2 = books[1];
+      var book3 = books[2];
+
+      console.log(
+        "전통적인 자바 스크립트 배열 값을 추출했습니다",
+        book1,
+        book2
+      );
+
+      // 비구조와 할당 방식으로 배열 안 값을 추출 변수에 할당!
+      // 메모리 항당은?
+      const [book4, book5] = ["Node", "Bun", "Go", "Python", "Java", "CPP"];
+      console.log("비구조화 할당", book4, book5);
+
+      const [book6, ...extraBooks] = [
+        "Node",
+        "Bun",
+        "Go",
+        "Python",
+        "Java",
+        "CPP",
+      ];
+      console.log("나머지 배열값 - extrabooks", extraBooks);
+
+      const [book8, book9 = "RUST"] = ["Node"];
+      console.log("비구조 항당된 상수를 모두 출력해보자", book8, book9);
+
+      // Step 2 : 객체의 속성값을 비구조화 할당방식으로 구현해본다.
+
+      // 전통적인 객체 속성값을 추출 변수에 할당하기
+      const trendTech = {
+        frontend: "React.js",
+        backend: "JAVA",
+        server: "Linux",
+        rdms: "Postgress",
+        nosql: "REDIS",
+        infra: "AWS",
+      };
+
+      const top1FrontedTech = trendTech["frontend"];
+      const top1BackTech = trendTech["backend"];
+      const top1serverTech = trendTech["server"];
+      const top1nosqlTech = trendTech["rdms"];
+
+      console.log(
+        "일반적으로 자바스크립트 객체의 속성값을 변수에 할당",
+        top1FrontedTech,
+        top1BackTech,
+        top1serverTech
+      );
+
+      // 객체 속성을 따라 가나? 비구조화 할당 방식으로 객체의 속성값을 추출
+      const { frontend, backend, server, getAuthor } = {
+        frontend: "React.js",
+        backend: "JAVA",
+        server: "Linux",
+        rdms: "Postgress",
+        nosql: "REDIS",
+        infra: "AWS",
+        getAuthor: function () {
+          return "김창훈";
+        },
+      };
+      console.log(
+        "객체의 비구조화 할당빙식으로 선언된 상수와 함수를 실행해보자",
+        frontend,
+        backend,
+        server,
+        getAuthor()
+      );
+    </script>
+  </body>
+</html>
