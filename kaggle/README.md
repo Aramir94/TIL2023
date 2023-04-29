@@ -1,1 +1,2 @@
-# WEEKLY kaggle challenge
+# Kaggle Project 
+Make Kaggle Books!
