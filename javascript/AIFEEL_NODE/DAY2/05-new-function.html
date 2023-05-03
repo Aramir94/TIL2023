@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>JS 함수사용법</title>
+  </head>
+
+  <body>
+    <h1>자바스크립트 신규함수 문법 사용하기</h1>
+
+    <script>
+      // 1. 이전 방식의 자바스크립트 함수 사용 실습
+      // 1-1. 사용법: function 예약어 + 정의 함수명 (함수에 전달되는 변수 => 파라미터[매개변수]){로직구현 return 반환 값}
+      function fnPlus(a, b) {
+        let c = a + b;
+        // return은 함수 실행 결과 값을 호출하는 곳에 반환해준다.
+        return c;
+      }
+
+      // 1-2. 정의된 기능(함수)를 사용해보기 -> 함수 호출하기
+      var result = fnPlus(1, 2);
+
+      // console에 출력
+      console.log("첫 번째 함수 실행 결과 값: ", result);
+
+      // 2. ECMA2015 이후에 새롭게 정의된 함수 정의 및 활용 방식으로 실습
+
+      // 2-1. 익명 함수 사용 - 함수명 생략 -> function 함수명 X
+      var plus1 = function (a, b) {
+        return a + b;
+      };
+
+      // 함수 적용
+      var result1 = plus1(3, 5);
+      // console에 출력
+      console.log("익명함수 실행: ", result1);
+
+      // 2-2. 화살표 함수 정의 및 사용
+      // 화살표 함수는 function이란 에약어와 함수명 둘다 생략 함.
+      var plus2 = (a, b) => {
+        return a + b;
+      };
+
+      // 함수 적용
+      var result2 = plus2(5, 6);
+      // console에 출력
+      console.log("화살표 함수 실행: ", result2);
+
+      // 2-3. 화살표 함수의 return 예약어 생략
+      // 화살표 함수의 return 예약어 생략시 {}가 아닌 ()로 사용
+      var plus3 = (a, b) => a + b;
+
+      // 함수 적용
+      var result3 = plus3(7, 7);
+      // console에 출력
+      console.log("화살표 함수 실행: ", result3);
+    </script>
+  </body>
+</html>

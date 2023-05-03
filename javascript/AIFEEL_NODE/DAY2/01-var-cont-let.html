@@ -1,0 +1,110 @@
+userName
+<html>
+  <head>
+    <title>자바스크립트 - 변수 / 상수 실습</title>
+  </head>
+
+  <body>
+    <h1>자바스크립트 - 변수 / 상수 실습</h1>
+
+    <!-- 스크립트 코드는 script 태그안에 정의한다. -->
+    <script>
+      // 여기서부터 자바스크립트 문법
+
+      // 1. 메모리에 저장공간을 할당하고 저장공간에 이름을 username라고 저장의한 후 공간에 이름을 할당한다.
+      // var -> 전통적이 JS의 변수 선언 예약어
+      // 자바스크립트 변수명은 카멜식 표기법을 사용한다.
+      var userName = "Kisung";
+      var age = "Scret";
+      var price = 50000;
+      var isMale = true;
+
+      // console이란 웹브라우저의 개발자 도구의 콘솔 영역에 로그영역 / 에러발생 등 내용을 출력해준다.
+      console.log("너의 이름은 무엇이니?", userName);
+
+      // 자바스크립트 코딩시 주의사항 - 자바스크립트는 대소문자를 구분한다.
+
+      // 기본배송비 값 정의/할당
+      var baseDelyfee = 3000;
+
+      // 기본 배공비 값을 변경
+      // 비지니스로직: 한번 할당된 값은 변경하고 싶지 않은 경우가 있음(상수)
+      // 기본배송비는 기본적으로 한번 할당하면 변경이 안되는 로직이 있음.
+      // var의 경우 변경이 가능하다. (프로그래밍 로직상 좋지않음)
+      baseDelyfee = 10000;
+
+      console.log(
+        "전통적인 자바스크립트 변수 에약어인 var는 상수개념정의 불가능, 언제든 값이 변경가능하다는 문제가 있음 ->",
+        baseDelyfee
+      );
+
+      // 2. ES2015에서 새로 도입된 상수선언 에약어를 사용
+      // 상수는 한번 값이 할당되면 변경이 불가능 (즉 프로그래밍 로직상 좋음)
+      const defaultDelyFee = 3000;
+
+      console.log(
+        "기본배송비 상수 값을 출력해보자, defaultDelyFee ->",
+        defaultDelyFee
+      );
+
+      // 상수값을 변경해보자!
+      // defaultDelyFee = 10000;
+
+      // 총결제비용 변수 선언 및 값할당
+      // let ES2015 신규로 도입된 변수 예약어
+      // var처럼 한번 정의하고 할당된 값을 변경 가능함.
+      let totalPayPrice = 0;
+
+      // 총결제 금액에 기본배송비(상수) 값을 더한다.
+      totalPayPrice += defaultDelyFee;
+      console.log("현재 총결제비용은?", totalPayPrice);
+
+      // 3. 블록스코프
+      // 3-1. BlockScope 란 if 구문 / for 구문과 같이 조건 / 반복문 구문등의 제어 범위를 말함.
+
+      if (isMale == true) {
+        console.log("당신은 남자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+      } else {
+        console.log("당신은 여자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+      }
+
+      // 3-2. var 변수 선언 방식은 블록스코프 개념 적용 불가
+      // const, let(ES2015에 도입된 상수/변수 예약어)의 경우 적용 가능
+      // 범위 내에서 선언된 let, const 변수/상수는 범위밖에서 사용이 불가함. 즉, 정의된 범위안에서만 사용가능!
+      if (isMale == true) {
+        // sample변수를 if 블록스코프 안에서만 사용하려고 정의하고 값을 할당함. var의 경우 if 스코프 밖에서도 사용과 변경이 가능!
+        var sample = "샘플 데이터입니다.";
+
+        console.log("당신은 남자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+      } else {
+        console.log("당신은 여자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+      }
+      // if 블록스코프 안에서 선언한 var sample 변수 확인
+      sample = "변경된 데이터 입니다."; // 변경된 변수 (var의 경우 해당 값이 출력 될 것임.)
+      console.log("if 구문안에서 정의된 sample 변수 값 확인: ", sample);
+
+      // 3-3. const, let 사용 사례
+      if (isMale == true) {
+        // sample변수를 if 블록스코프 안에서만 사용하려고 정의하고 값을 할당함. var의 경우 if 스코프 밖에서도 사용과 변경이 가능!
+        const sample1 = "상수 데이터 값 입니다.";
+        let sample2 = "let의 변수 값 입니다.";
+
+        console.log("당신은 남자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+
+        // 블록 스코프안에서 정의된 let, const는 해당 범위내에서는 정상사용 가능 (하지만 범위 밖에서는 사용 불가능)
+        console.log("let, const 값을 출력: ", sample1, sample2);
+      } else {
+        console.log("당신은 여자입니다.");
+        // 조건문 사이에 {}중괄호 사이의 범위를 블록스코프
+      }
+
+      // if 구문안에서 정의된 let과 const 변수, 상수를 범위밖에서 사용할 경우 에러 발생
+      // console.log("let, const 값을 출력: ", sample1, sample2);
+    </script>
+  </body>
+</html>

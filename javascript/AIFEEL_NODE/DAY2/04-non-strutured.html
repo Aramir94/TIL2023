@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>배열과 객체의 비구조와 할당 실습</title>
+  </head>
+
+  <body>
+    <h1>배열과 객체의 비구조와 할당 실습하기</h1>
+
+    <script>
+      // 1. 자바스크립트 배열 만들기 - 배열은 목록 형테로 데이터를 쌓아 놓는 것을 말함.
+      const books = [
+        "React",
+        "Vue",
+        "Angular",
+        "Svelt",
+        "JQuery",
+        "JavaScript",
+      ]; // 프론트엔드 기술 스택들
+
+      // 1-1. 배열안에 첫 번째 값 추출, 두 번째 값 추출하는 이전(ES2015 이전) 방법
+      // 배열안에 특정값을 추출하려면 배열[인덱스번호] 인덱스 순번은 0부터 시작!
+      var book1 = books[0]; // 배열의 첫 번째 문자열 값을 추출해서 변수에 할당
+      var book2 = books[1]; // 배열의 두 번째 문자열 값을 추출해서 변수에 할당
+      var book3 = books[2]; // 배열의 세 번째 문자열 값을 추출해서 변수에 할당
+
+      // console에 출력
+      console.log(
+        "이번 방식으로 자바스크립트 배열의 값을 추출: ",
+        book1,
+        book2,
+        book3
+      );
+
+      // 1-2. 신규문법은 비구조화 할당 방식으로 배열안에 값을 추출해서 변수에 할당 해보기 1
+      // 앞에 변수와 배열 순서에 맞게 알아서 변수에 할당
+      const [book4, book5] = ["Node.JS", "JAVA", "Python", "PHP", "C#", "Go"]; // 백앤드 기술 스택들
+
+      // console에 출력
+      console.log("비구조화 할당 방식으로 배열의 값 추출: ", book4, book5);
+
+      // 1-3. 신규문법은 비구조화 할당 방식으로 배열안에 값을 추출해서 변수에 할당 해보기 2
+      // ...extrabooks는 첫 번째에 할당된 문자열을 제외한 나머지 값들을 배열로 반환
+      const [book6, ...extrabooks] = [
+        "Node.JS",
+        "JAVA",
+        "Python",
+        "PHP",
+        "C#",
+        "Go",
+      ];
+
+      // console에 출력
+      console.log("추출된 첫 번째 값 - book6: ", book6);
+      console.log("나머지 배열 값 - extrabooks: ", extrabooks);
+
+      // 1-3. 신규문법은 비구조화 할당 방식으로 배열안에 값을 추출해서 변수에 할당 해보기 3
+      // 맨 뒤의 변수의 값이 할당이 안되어 있으면 변수에 직접 넣을 수 있음
+      const [book7, book8, book9, book10, book11, book12, book13 = "Rust"] = [
+        "Node.JS",
+        "JAVA",
+        "Python",
+        "PHP",
+        "C#",
+        "Go",
+      ];
+
+      // console에 출력
+      console.log(
+        "비구조로 할당된 상수를 모두 출력: ",
+        book7,
+        book8,
+        book9,
+        book10,
+        book11,
+        book12,
+        book13
+      );
+
+      // 2. 객체의 속성값을 비구조화 할당방식으로 구현
+
+      // 2-1. 이전 방식의 객체속성값을 추출해서 변수에 할당하기
+      const trandTech = {
+        frontend: "React.JS",
+        backend: "JAVA",
+        server: "Linux",
+        rdbms: "PostgreSQL",
+        noSQL: "MongoDB",
+        infra: "AWS",
+      };
+
+      // 객체 속성의 값을 추출해 변수나 상수에 할당하는 구조화된 할당 방식
+      const top1FrontendTech = trandTech.frontend;
+      const top1BackendTech = trandTech.backend;
+
+      // console에 출력
+      console.log(
+        "일반적인 JS 객체 속성 값을 변수/상수에 할당: ",
+        top1FrontendTech,
+        top1BackendTech
+      );
+
+      // 2-2. 비구조화 할당문법을 이용해 객체의 속성값을 할당!
+      const { frontend, backend, server, getAuthor } = {
+        frontend: "React.JS",
+        backend: "JAVA",
+        server: "Linux",
+        rdbms: "PostgreSQL",
+        noSQL: "MongoDB",
+        infra: "AWS",
+        getAuthor: function () {
+          return "강창훈";
+        },
+      };
+
+      // console에 출력  - 함수 출력시 함수명()
+      console.log(
+        "객체의 비구조화 할당방식으로 선언된 상수와 함수를 실행: ",
+        frontend,
+        backend,
+        server,
+        getAuthor()
+      );
+    </script>
+  </body>
+</html>
