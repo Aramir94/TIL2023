@@ -1,0 +1,8 @@
+QUERY: "artificial intelligence" # Category of arXiv abstracts
+MAX_ABSTRACTS: 30 # Number of abstracts to retrieve from database
+NGRAM_MIN: 1 # Min N-gram length
+NGRAM_MAX: 1 # Max N-gram length
+TOP_N: 3 # Number of keywords to return
+DIVERSITY_ALGO: "mmr" # or 'maxsum'
+DIVERSITY: 0.2 # For MMR (higher value = more dissimilar keywords)
+NR_CANDIDATES: 20 # For MaxSum (number of candidates)
