@@ -28,8 +28,6 @@ FROM ML to LLM WE CAN DO TEXT SUMMARIZATION
 
 ---
 참고
-읽은거 
-1. https://blog.floydhub.com/gentle-introduction-to-text-summarization-in-machine-learning
 
 못읽은거
 https://medium.com/@shubhamsingh_31435/text-summarization-of-japanese-articles-using-python-and-nlp-47a214d769b
